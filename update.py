@@ -68,7 +68,7 @@ if DATABASE_URL is not None:
     except Exception as e:
         log_error(f"Database ERROR: {e}")
 
-UPSTREAM_REPO = environ.get("UPSTREAM_REPO", "")
+UPSTREAM_REPO = environ.get("UPSTREAM_REPO", "https://github.com/ALiENxBEN/Kevin")
 if len(UPSTREAM_REPO) == 0:
     UPSTREAM_REPO = None
 
